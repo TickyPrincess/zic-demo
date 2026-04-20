@@ -19,7 +19,7 @@ export default function LandingPage() {
         <h1 className="max-w-3xl text-4xl font-semibold leading-tight md:text-6xl">Turn repetitive work into reusable workflows.</h1>
         <p className="mt-5 max-w-2xl text-muted-foreground">ZIC helps you capture a recurring process, save it as a playbook, and run it again with structured execution and outputs.</p>
         <div className="mt-8 flex gap-3">
-          <Link href="/app"><Button>Open Demo App</Button></Link>
+          <Link href="/app"><Button>Open App</Button></Link>
           <Link href="/app/teach"><Button variant="outline">Teach a Task</Button></Link>
         </div>
       </section>

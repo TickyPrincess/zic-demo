@@ -1,30 +1,28 @@
-# ZIC Demo MVP
+# ZIC
 
-Frontend-heavy demo for **ZIC** — a personal agent for repetitive work.
+ZIC is a personal agent for repetitive work.
 
 ## What this is
-A clickable startup-style shell that demonstrates:
+A frontend product shell for ZIC where users can:
 - teach a recurring task once
 - save it as a reusable workflow/playbook
-- re-run workflow with step-by-step execution simulation
+- re-run workflows with step-by-step execution
 - review runs, logs, outputs, suggestions, and templates
-
-This is intentionally mock-driven (no real backend automation infra).
 
 ## Stack
 - Next.js (App Router)
 - TypeScript
 - Tailwind CSS
-- lightweight shadcn-style UI primitives
-- Framer Motion (run simulation transitions)
-- Zustand (simple in-memory state for taught workflows)
+- shadcn-style UI primitives
+- Framer Motion
+- Zustand (in-memory app state)
 
 ## Routes
 - `/` Landing page
 - `/app` Dashboard
 - `/app/teach` Teach task / create workflow
 - `/app/workflows/[id]` Workflow details
-- `/app/workflows/[id]/run` Run execution simulation
+- `/app/workflows/[id]/run` Run execution
 - `/app/templates` Templates
 - `/app/suggestions` Suggested automations
 - `/app/settings` Settings
@@ -34,9 +32,9 @@ This is intentionally mock-driven (no real backend automation infra).
 npm install
 npm run dev
 ```
-Then open `http://localhost:3000`.
+Open `http://localhost:3000`.
 
 ## Notes
 - Data model types: `src/types/index.ts`
 - Mock data: `src/data/mock-data.ts`
-- Demo run behavior is simulated in `src/app/app/workflows/[id]/run/page.tsx`
+- Run behavior logic: `src/app/app/workflows/[id]/run/page.tsx`
